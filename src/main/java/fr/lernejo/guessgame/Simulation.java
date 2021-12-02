@@ -31,16 +31,16 @@ public class Simulation {
         long nbr = player.askNextGuess();
         if(nbr == numberToGuess)
         {
-            System.out.println("Félicitation vous avez trouvé(e) le bon Chiffre !!!");
+            System.out.println("Félicitations le chiffre que vous avez donné est le bon !!!");
             logger.log("End");
             return true;
         }
         else
         {
             if(nbr > numberToGuess)
-                System.out.println("Votre Chiffre est plus grand");
+                System.out.println("Votre chiffre est plus grand");
             else
-                System.out.println("Votre Chiffre est plus petit");
+                System.out.println("Votre chiffre est plus petit");
             logger.log("Mauvais chiffre");
             return false;
         }
@@ -62,7 +62,7 @@ public class Simulation {
             TimeUnit.MILLISECONDS.toSeconds(time),
             TimeUnit.MILLISECONDS.toMillis(time));
         if(!isFound)
-            logger.log("Le joueur n'a pas trouvé le chiffre");
-        logger.log("La partie a pris "+format+" minutes");
+            logger.log("Vous n'avez pas trouvé le chiffre");
+        logger.log("La partie a durée "+format+" minutes");
     }
 }
