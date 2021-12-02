@@ -9,7 +9,7 @@ public class Launcher {
     public static void main(String[] args) {
 
         SecureRandom random = new SecureRandom();
-        long nbr = random.nextLong();
+        long nbr = random.nextLong(100);
 
         if(args[0].equals("-interactive"))
         {
