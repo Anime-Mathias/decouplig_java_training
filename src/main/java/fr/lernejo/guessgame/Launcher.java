@@ -22,7 +22,7 @@ public class Launcher {
         } else {
             logger.log("" +
                 "Il y a 2 manières de lancer ce programme :\n" +
-                "-interactive, jouer une partie vs l'ordinateur \n" +
+                "-interactive, jouer une partie contre l'ordinateur \n" +
                 "-auto $1, faire deviner un chiffre à l'ordinateur.");
 
         }
